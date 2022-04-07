@@ -1,0 +1,1 @@
+enum PageState{welcome,login,register}
