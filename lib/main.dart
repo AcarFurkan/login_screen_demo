@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_ui_demo/pages/welcome_page.dart';
 import 'package:get/get.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 import 'firebase_options.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
+        builder: EasyLoading.init(),
         theme: ThemeData.dark().copyWith(
             primaryColor: Colors.green,
             indicatorColor: Colors.green,
